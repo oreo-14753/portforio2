@@ -1,0 +1,205 @@
+/* ==========================
+   Portfolio Style
+   Theme : Green - White - Yellow
+========================== */
+
+/* รีเซ็ตค่าเริ่มต้น */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* พื้นหลังเว็บไซต์ */
+body{
+    font-family: "TH Sarabun New", Tahoma, sans-serif;
+    background: #f5fff5;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ส่วนหัว */
+header{
+    background: linear-gradient(135deg,#2E7D32,#4CAF50);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1{
+    font-size: 48px;
+}
+
+header p{
+    font-size: 24px;
+}
+
+/* เมนู */
+nav{
+    background: #FFD54F;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1B5E20;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/* กล่องเนื้อหา */
+.container{
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+/* หน้าแรก */
+.hero{
+    text-align: center;
+}
+
+/* รูปโปรไฟล์ */
+.profile-img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* หัวข้อ */
+h2{
+    color: #2E7D32;
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+h3{
+    color: #388E3C;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+p{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* ปุ่ม */
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    background: #43A047;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #FBC02D;
+    color: #1B5E20;
+}
+
+/* เส้นแบ่ง */
+hr{
+    margin: 40px 0;
+    border: 1px solid #ddd;
+}
+
+/* รูปภาพทั่วไป */
+img{
+    max-width: 100%;
+}
+
+/* ตาราง */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th{
+    background: #4CAF50;
+    color: white;
+}
+
+table th,
+table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* การ์ด */
+.card{
+    background: #FAFAFA;
+    border-left: 6px solid #4CAF50;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* ส่วนท้าย */
+footer{
+    background: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* รองรับมือถือ */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 36px;
+    }
+
+    header p{
+        font-size: 20px;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .profile-img{
+        width: 170px;
+        height: 170px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
