@@ -5,76 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | หน้าหลัก</title>
 
-    <!-- เชื่อมไฟล์ CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Sarabun", sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        header h2{
+            font-size:28px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:80px 10%;
+            gap:50px;
+            flex-wrap:wrap;
+        }
+
+        .hero img{
+            width:280px;
+            height:280px;
+            border-radius:50%;
+            object-fit:cover;
+            border:8px solid #0d6efd;
+            box-shadow:0 10px 20px rgba(0,0,0,.2);
+        }
+
+        .hero-text{
+            max-width:600px;
+        }
+
+        .hero-text h1{
+            font-size:45px;
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        .hero-text h3{
+            margin-bottom:20px;
+            color:#555;
+        }
+
+        .hero-text p{
+            line-height:1.8;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#0d6efd;
+            color:white;
+            padding:12px 28px;
+            border-radius:8px;
+            text-decoration:none;
+            margin-right:10px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#084298;
+        }
+
+        .section{
+            padding:60px 10%;
+            text-align:center;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        footer{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+    </style>
+
 </head>
 <body>
 
-    <!-- ส่วนหัวเว็บไซต์ -->
-    <header>
-        <h1>Portfolio</h1>
-        <p>แฟ้มสะสมผลงานของนักเรียน</p>
-    </header>
+<header>
 
-    <!-- เมนู -->
+    <h2>My Portfolio</h2>
+
     <nav>
         <a href="index.html">หน้าหลัก</a>
-        <a href="profile.html">ประวัติส่วนตัว</a>
-        <a href="works.html">ผลงาน</a>
+        <a href="about.html">ประวัติ</a>
+        <a href="projects.html">ผลงาน</a>
         <a href="certificates.html">เกียรติบัตร</a>
-        <a href="contact.html">ช่องทางติดต่อ</a>
+        <a href="contact.html">ติดต่อ</a>
     </nav>
 
-    <!-- เนื้อหาหลัก -->
-    <main class="container">
+</header>
 
-        <section class="hero">
+<section class="hero">
 
-            <!-- รูปโปรไฟล์ -->
-            <img src="images/profile.jpg" alt="รูปโปรไฟล์" class="profile-img">
+    <img src="images/profile.jpg" alt="Profile">
 
-            <h2>สวัสดีครับ</h2>
+    <div class="hero-text">
 
-            <h3>นาย.......................................</h3>
+        <h1>สวัสดีครับ 👋</h1>
 
-            <p>
-                นักเรียนชั้นมัธยมศึกษาปีที่ 6/5
-            </p>
+        <h3>ผมชื่อ : นาย............................</h3>
 
-            <p>
-                ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
-                เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว ผลงาน
-                เกียรติบัตร และช่องทางการติดต่อ
-            </p>
-
-            <a href="profile.html" class="btn">
-                ดูประวัติส่วนตัว
-            </a>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <h2>ยินดีต้อนรับ</h2>
-
-            <p>
-                Portfolio นี้เป็นส่วนหนึ่งของรายวิชาคอมพิวเตอร์
-                เพื่อแสดงความสามารถ ประสบการณ์ ผลงาน และกิจกรรมต่าง ๆ
-                ที่ได้เข้าร่วมตลอดช่วงการศึกษา
-            </p>
-
-        </section>
-
-    </main>
-
-    <!-- ส่วนท้าย -->
-    <footer>
         <p>
-            © 2026 Portfolio | นักเรียนชั้น ม.6/5
+            นักเรียนชั้นมัธยมศึกษาปีที่ 6/5
+            <br>
+            ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
+            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+            ผลงาน เกียรติบัตร และช่องทางการติดต่อ
         </p>
-    </footer>
+
+        <a href="about.html" class="btn">ประวัติส่วนตัว</a>
+
+        <a href="projects.html" class="btn">ผลงาน</a>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>สิ่งที่อยู่ในเว็บไซต์</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>👤 ประวัติส่วนตัว</h3>
+            <p>ข้อมูลส่วนตัว ความสามารถ งานอดิเรก และทักษะต่าง ๆ</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 ผลงาน</h3>
+            <p>รวมผลงานด้านการเรียน การเขียนโปรแกรม และกิจกรรม</p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 เกียรติบัตร</h3>
+            <p>รวบรวมใบประกาศนียบัตรจากการแข่งขันและการอบรม</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Portfolio นักเรียน ม.6/5
+        <br>
+        พัฒนาเว็บไซต์ด้วย HTML CSS และ GitHub Pages
+    </p>
+
+</footer>
 
 </body>
 </html>
